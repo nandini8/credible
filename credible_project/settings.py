@@ -85,20 +85,17 @@ if 'RDS_DB_NAME' in os.environ:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-<<<<<<< HEAD
             #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
             'NAME': 'trial',
             'USER': 'root',
             'PASSWORD': 'mysql',
             'HOST': '127.0.0.1',
             'PORT': '3306',
-=======
             'NAME': os.environ['RDS_DB_NAME'],
             'USER': os.environ['RDS_USERNAME'],
             'PASSWORD': os.environ['RDS_PASSWORD'],
             'HOST': os.environ['RDS_HOSTNAME'],
             'PORT': os.environ['RDS_PORT'],
->>>>>>> 8521d224244d90379c5795ad66c0b4d2ccc87fbc
         }
     }
 else:
