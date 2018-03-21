@@ -26,9 +26,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'ml4q9(wafizw$^rrr9e*^xdd+8^m8bz5#$53vef2i)3w-xcd(v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-13-58-198-25.us-east-2.compute.amazonaws.com', 'ec2-18-220-1-211.us-east-2.compute.amazonaws.com', '18.220.1.211']
+ALLOWED_HOSTS = ['ec2-13-58-198-25.us-east-2.compute.amazonaws.com', 'ec2-18-220-1-211.us-east-2.compute.amazonaws.com', '18.220.1.211', '127.0.0.1']
 #ALLOWED_HOSTS = ['*']
 
 
@@ -81,17 +81,38 @@ WSGI_APPLICATION = 'credible_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
             'ENGINE': 'django.db.backends.mysql',
+<<<<<<< HEAD
             #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
             'NAME': 'trial',
             'USER': 'root',
             'PASSWORD': 'mysql',
             'HOST': '127.0.0.1',
             'PORT': '3306',
+=======
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+>>>>>>> 8521d224244d90379c5795ad66c0b4d2ccc87fbc
         }
-}
+    }
+else:
+    DATABASES = {
+        'default': {
+                'ENGINE': 'django.db.backends.mysql',
+                #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+                'NAME': 'trial',
+                'USER': 'root',
+                'PASSWORD': 'mysql',
+                'HOST': '127.0.0.1',
+                'PORT': '3306',
+            }
+    }
 
 
 # Password validation
