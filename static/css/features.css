@@ -1,0 +1,38 @@
+/* Feature */
+
+.feature_box {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(200, 200, 200, 0.23137254901960785);
+}
+
+.feature_box:hover {
+    animation-name: feature;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes feature {
+    0% {box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05),0 2px 2px 0 rgba(0,0,0,0.25); background: rgba(200, 200, 200, 0.23137254901960785)}
+    100% {box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 5px 0 rgba(0,0,0,0.5); background: rgba(200, 200, 200, 0.8)}
+}
+
+#features .container {
+    width: 95%;
+}
+
+#features h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+#features p {
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+#features .fas {
+    font-size: 3.8em;
+    color: #56a79a;
+}
