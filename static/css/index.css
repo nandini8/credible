@@ -7,6 +7,10 @@
     color: #115da9;
 }
 
+.hidden {
+    display: none;
+}
+
 .button_01 {
     display: inline-block;
     margin-top: 10px;
