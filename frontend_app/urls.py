@@ -19,7 +19,7 @@ from django.urls import path
 from frontend_app import views as fViews
 from backend_app import views as bViews
 
-urlpatterns = [url(r'^newsview/$', fViews.newsView, name="newsView"),
-	url(r'^about/$', fViews.about, name="about"),
-	url(r'^features/$', fViews.features, name="features"),
+urlpatterns = [url(r'^newsview.html/$', fViews.newsView, name="newsView"),
+	url(r'^about.html/$', fViews.about, name="about"),
+	url(r'^features.html/$', fViews.features, name="features"),
     ]
