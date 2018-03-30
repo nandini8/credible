@@ -5,6 +5,12 @@ function newsLoader(data) {
     if (this.readyState == 4 && this.status == 200) {
         
         var Obj = JSON.parse(this.responseText);
+
+	for(var a = 0; a <= 15; a++) {
+
+            obj[a].content = obj[a].content.slice(0, 330);
+        
+	}
         
         document.getElementById("title").innerHTML = Obj.title;
         document.getElementById("content").innerHTML = Obj.content;
@@ -15,7 +21,7 @@ function newsLoader(data) {
         }
     };
 
-    xmlhttp.open("GET", "api/article/" + data, true);
+    xmlhttp.open("GET", "http://18.216.28.234:8000/api/articles/" + localStorage.getItem('article_id'), true);
     xmlhttp.send();
 }
 
