@@ -5,6 +5,10 @@ xmlhttp.onreadystatechange = function () {
 
         var obj = JSON.parse(this.responseText);
 
+	for(var a = 0; a <= 15; a++) {
+            obj[a].content = obj[a].content.slice(0, 330);
+        }
+
         document.getElementById("title_0").innerHTML = obj[0].title;
         document.getElementById("cred_0").innerHTML = obj[0].credibility_score;
         document.getElementById("content_0").innerHTML = obj[0].content;
