@@ -20,8 +20,4 @@ from frontend_app import views as fViews
 from backend_app import views as bViews
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    url(r'^$', fViews.home, name="home"),
-    url(r'^api/',include('api_app.urls')),
-    url(r'^', include('frontend_app.urls')),
     ]
