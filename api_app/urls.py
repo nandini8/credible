@@ -15,10 +15,17 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
-from api_app import views
+#from api_app import views
+#from rest_framework.urlpatterns import format_suffix_patterns
+#from .views import ArticlesList, Article
 
+from api_app import views as aViews
 
 urlpatterns = [
-	url(r'^$', views.home, name="home"),
-    url(r'^articles/',views.article, name="article_view"),
+	url(r'^$', aViews.home, name="home"),
+	url(r'^articles/$',aViews.article, name="articles_detail"),
+	url(r'^articles/(?P<article_number>[0-9]+)/$', aViews.articles_detail, name = "article_view"),
     ]
+
+#urlpatterns = format_suffix_patterns(urlpatterns)
+	#^places/(?P<name>\w+)/$

@@ -17,9 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.urls import path
 from frontend_app import views as fViews
+from backend_app import views as bViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^$', bViews.populate_init_data, name="backend_populate"),
     url(r'^api/',include('api_app.urls')),
     url(r'^$', fViews.home, name="frontend_home_view"),
     ]
