@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+{% load static %}
 <html lang="en">
     
     <head>
@@ -6,10 +8,10 @@
         
         <title>Credible | News</title>
         
-        <link rel="stylesheet" href="css/flexboxgrid.css">
-        <link rel="stylesheet" href="css/basic.css">
-        <link rel="stylesheet" href="css/newsview.css">
-        <script src="javascript/newsLoader.js"></script>
+        <link rel="stylesheet" href="{% static "css/flexboxgrid.css" %}">
+        <link rel="stylesheet" href="{% static "css/basic.css" %}">
+        <link rel="stylesheet" href="{% static "css/newsview.css" %}">
+        <script src="{% static "javascript/newsLoader.js" %}"></script>
     </head>
     
     <body>
