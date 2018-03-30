@@ -1,0 +1,83 @@
+/* #main_header {
+    margin-bottom: 20px;
+} */
+
+.button_01{
+    text-decoration: none;
+    color: #115da9;
+}
+
+.button_01 {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px 0px;
+    text-align: center;
+    color: #111111;
+    height: 30px;
+    /*border-radius: 10px;
+    border: 1px solid #555555;*/
+}
+
+.button_01:hover {
+    animation-name: popUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.5)!important;
+}
+
+@keyframes popUp {
+    0% {box-shadow: 0 0px 0px 0 rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,0); background-color: #ffffff}
+    100% {box-shadow: 0 2px 10px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.5); background-color: #019149}
+}
+
+/* @keyframes buttonFill {
+    0% {background-color: rgba(100, 100, 100, 0.5)}
+    100% {background-color: rgba(10, 10, 10, 0.9)}
+} */
+
+main>h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main>p {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 15px;
+}
+
+.news_box {
+    margin: 10px;
+    padding: 25px;
+    text-align: justify;
+    background: #fff;
+    border: 1px solid #dddddd;
+     
+}
+
+.news_box h2 {
+    color: #666666;
+    padding-bottom: 3px;
+    /*border-bottom: 2px solid #999999;*/
+    margin-bottom: 10px;
+}
+
+.news_box:hover {
+    border: none;
+    background-color: rgba(100, 100, 100, 0.05);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+
+.news_box, main>h2, main>p {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+}
