@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', fViews.home, name="home"),
     url(r'^api/',include('api_app.urls')),
-    url(r'^', include('frontend_app.urls')),
+    url(r'^frontend/', include('frontend_app.urls')),
     ]
