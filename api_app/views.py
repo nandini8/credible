@@ -33,7 +33,7 @@ def article(request):
 		d['article_id'] = row[0]
 		d['title'] = row[1]
 		d['content'] = row[2]
-		d['credibility_score'] = str(row[3])
+		d['credibility_score'] = str(row[3])[:4]
 		d['publisher'] = row[4]
 		d['published_date'] = row[5]
 		d['article_link'] = row[6]
@@ -65,7 +65,7 @@ def articles_detail(request, article_number):
 		d['content'] = row[2]
 		d['publisher'] = row[3]
 		d['published_date'] = row[4]
-		d['credibility_score'] = str(row[5])
+		d['credibility_score'] = str(row[5])[:4]
 		d['article_link'] = row[6]
 		articles.append(d)
 	j = json.dumps(articles, default = myconverter)
