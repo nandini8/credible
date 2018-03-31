@@ -1,7 +1,7 @@
 import MySQLdb
 import pandas as pd
 #from similar_article import getArticleTopicIds
-from backend_app.predict_on_stemmed_data import credibility
+#from backend_app.predict_on_stemmed_data import credibility
 #from backend_app.update_script import update
 
 def populate_update_data():
@@ -15,10 +15,10 @@ def populate_update_data():
 	select_query = "select article_id, content from TWEET_DATA;"
 	#select_query_2 = "select tweet_id from TWEET_DATA;"
 
-	cursor.execute(select_query)
+	'''cursor.execute(select_query)
 	select_object = cursor.fetchall()
 
-	'''cursor.execute(select_query_2)
+	cursor.execute(select_query_2)
 	select_tweet_id = cursor.fetchall()
 	list_of_ids = []
 	for tweet in select_tweet_id:
@@ -36,7 +36,7 @@ def populate_update_data():
 
 
 
-	print("HEllo")
+	'''print("HEllo")
 
 	article_dict = []
 	for obj in select_object:
@@ -51,7 +51,7 @@ def populate_update_data():
 		set_query = "update TWEET_DATA set credibility_score = " + str(df.loc[ind, 'credibility_score']) + " where article_id = " + str(df.loc[ind, 'article_id']) + ";"
 		print(set_query)
 		cursor.execute(set_query)
-	mydb.commit()
+	mydb.commit()'''
 	
 	'''df = getArticleTopicIds(df)
 	for ind in df.index:
