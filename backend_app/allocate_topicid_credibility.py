@@ -1,6 +1,6 @@
 import MySQLdb
 import pandas as pd
-from similar_article import getArticleTopicIds
+#from similar_article import getArticleTopicIds
 from predict import credibility
 from update_script import update
 
