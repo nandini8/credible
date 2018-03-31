@@ -13,7 +13,7 @@ def predict_type(dataSet,):
     #print(dataSet)
     #loading training model
     clf = joblib.load("backend_app/mnb_mix_title.sav")
-    count_vect = joblib.load("vectoriser_mix_title.sav")
+    count_vect = joblib.load("backend_app/vectoriser_mix_title.sav")
     out = []
 
     for i in dataSet:
