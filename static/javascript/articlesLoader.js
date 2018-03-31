@@ -80,3 +80,197 @@ xmlhttp.onreadystatechange = function () {
 
 xmlhttp.open("GET", "/api/articles/", true);
 xmlhttp.send();
+
+
+            if(document.getElementById("cred_0").innerHTML < 0.33) {
+            document.getElementById("news_box_0").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_0").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_0").innerHTML < 0.66) {
+            document.getElementById("news_box_0").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_0").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_0").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_0").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_1").innerHTML < 0.33) {
+            document.getElementById("news_box_1").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_1").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_1").innerHTML < 0.66) {
+            document.getElementById("news_box_1").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_1").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_1").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_1").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_2").innerHTML < 0.33) {
+            document.getElementById("news_box_2").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_2").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_2").innerHTML < 0.66) {
+            document.getElementById("news_box_2").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_2").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_2").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_2").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_3").innerHTML < 0.33) {
+            document.getElementById("news_box_3").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_3").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_3").innerHTML < 0.66) {
+            document.getElementById("news_box_3").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_3").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_3").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_3").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_4").innerHTML < 0.33) {
+            document.getElementById("news_box_4").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_4").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_4").innerHTML < 0.66) {
+            document.getElementById("news_box_4").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_4").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_4").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_4").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_5").innerHTML < 0.33) {
+            document.getElementById("news_box_5").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_5").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_5").innerHTML < 0.66) {
+            document.getElementById("news_box_5").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_5").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_5").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_5").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_6").innerHTML < 0.33) {
+            document.getElementById("news_box_6").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_6").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_6").innerHTML < 0.66) {
+            document.getElementById("news_box_6").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_6").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_6").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_6").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_7").innerHTML < 0.33) {
+            document.getElementById("news_box_7").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_7").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_7").innerHTML < 0.66) {
+            document.getElementById("news_box_7").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_7").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_7").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_7").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_8").innerHTML < 0.33) {
+            document.getElementById("news_box_8").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_8").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_8").innerHTML < 0.66) {
+            document.getElementById("news_box_8").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_8").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_8").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_8").style.borderLeft = "5px solid green";
+        }
+            if(document.getElementById("cred_9").innerHTML < 0.33) {
+            document.getElementById("news_box_9").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_9").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_9").innerHTML < 0.66) {
+            document.getElementById("news_box_9").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_9").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_9").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_9").style.borderLeft = "5px solid green";
+        }
+        if(document.getElementById("cred_10").innerHTML < 0.33) {
+            document.getElementById("news_box_10").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_10").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_10").innerHTML < 0.66) {
+            document.getElementById("news_box_10").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_10").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_10").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_10").style.borderLeft = "5px solid green";
+        }    
+         if(document.getElementById("cred_11").innerHTML < 0.33) {
+            document.getElementById("news_box_11").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_11").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_11").innerHTML < 0.66) {
+            document.getElementById("news_box_11").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_11").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_11").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_11").style.borderLeft = "5px solid green";
+        }
+        if(document.getElementById("cred_12").innerHTML < 0.33) {
+            document.getElementById("news_box_12").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_12").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_12").innerHTML < 0.66) {
+            document.getElementById("news_box_12").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_12").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_12").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_12").style.borderLeft = "5px solid green";
+        }
+        if(document.getElementById("cred_13").innerHTML < 0.33) {
+            document.getElementById("news_box_13").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_13").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_13").innerHTML < 0.66) {
+            document.getElementById("news_box_13").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_13").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_13").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_13").style.borderLeft = "5px solid green";
+        }
+        if(document.getElementById("cred_14").innerHTML < 0.33) {
+            document.getElementById("news_box_14").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_14").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_14").innerHTML < 0.66) {
+            document.getElementById("news_box_14").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_14").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_14").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_14").style.borderLeft = "5px solid green";
+        }
+        if(document.getElementById("cred_15").innerHTML < 0.33) {
+            document.getElementById("news_box_15").style.background = "rgba(244, 66, 69, 0.3)";
+            document.getElementById("news_box_15").style.borderLeft = "5px solid red";
+            }
+        else if(document.getElementById("cred_15").innerHTML < 0.66) {
+            document.getElementById("news_box_15").style.background = "rgba(255, 247, 17, 0.5)";
+            document.getElementById("news_box_15").style.borderLeft = "5px solid yellow";
+            }
+        else {
+            document.getElementById("news_box_15").style.background = "rgba(9, 89, 5, 0.5)";
+            document.getElementById("news_box_15").style.borderLeft = "5px solid green";
+        }
