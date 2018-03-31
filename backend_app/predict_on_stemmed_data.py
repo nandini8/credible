@@ -18,6 +18,8 @@ import pandas as pd
 from nltk.corpus import stopwords
 import string
 
+nltk.download()
+
 def predict_type(dataSet,):
     #print(dataSet)
     #loading training model
