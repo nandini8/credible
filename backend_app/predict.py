@@ -26,8 +26,8 @@ def predict_type(dataSet,):
 def predict_score(dataSet):
     #print(dataSet)
     #loading training model
-    clf = joblib.load("mnb_mix_title.sav")
-    count_vect = joblib.load("vectoriser_mix_title.sav")
+    clf = joblib.load("backend_app/mnb_mix_title.sav")
+    count_vect = joblib.load("backend_app/vectoriser_mix_title.sav")
     score = []
     
     for i in dataSet:
