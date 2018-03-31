@@ -1,17 +1,12 @@
-function newsLoader(data) {
-    var xmlhttp = new XMLHttpRequest();
+var xmlhttp = new XMLHttpRequest();
 
-    xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {        
         var Obj = JSON.parse(this.responseText);
         
         document.getElementById("title").innerHTML = Obj.title;
         document.getElementById("content").innerHTML = Obj.content;
-        document.getElementById("like").innerHTML = Obj.like;
-        document.getElementById("share").innerHTML = Obj.share;
-        document.getElementById("date").innerHTML = Obj.engagement_id;
-        document.getElementById("credibility").innerHTML = Obj.credibility;
+        document.getElementById("credibility").innerHTML = Obj.credibility_score;
         }
     };
 
