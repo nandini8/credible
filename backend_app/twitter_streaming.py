@@ -58,7 +58,7 @@ class StdOutListener(StreamListener):
 def run_streaming():
     #This handles Twitter authetification and the connection to Twitter Streaming API
 
-    l = StdOutListener(time_limit=10)
+    l = StdOutListener(time_limit=30)
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l, tweet_mode='extended')
