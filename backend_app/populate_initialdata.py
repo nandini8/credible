@@ -24,7 +24,7 @@ def populate_data():
 	#cursor.execute("create table TWEET_DATA (article_id int PRIMARY KEY AUTO_INCREMENT, tweet_id varchar(20) NOT NULL, user_id varchar(20) NOT NULL, tweet_date datetime NOT NULL, tweet_text text NOT NULL, article_link varchar(255), title text, published_date datetime, likes int, shares int, content longtext, publisher varchar(100), topic_id int default 0, credibility_score decimal(1,1) default 0.7, UNIQUE(tweet_id, article_link));")
 	#cursor.execute("ALTER TABLE TWEET_DATA AUTO_INCREMENT = 1")
 	#cursor.execute("ALTER TABLE trial.TWEET_DATA MODIFY COLUMN tweet_text text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;")
-	cursor.execute("Alter table TWEET_DATA MODIFY column credibility_score varchar(20);")
+	#cursor.execute("Alter table TWEET_DATA MODIFY column credibility_score varchar(20);")
 
 
 	exclude = set(string.punctuation)
