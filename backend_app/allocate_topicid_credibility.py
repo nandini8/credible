@@ -12,13 +12,13 @@ def populate_update_data():
 	cursor = mydb.cursor()
 	mydb.set_character_set('utf8mb4')
 
-	select_query = "select article_id, content from TWEET_DATA;"
+	select_query = "select article_id, title from TWEET_DATA;"
 	#select_query_2 = "select tweet_id from TWEET_DATA;"
 
-	'''cursor.execute(select_query)
+	cursor.execute(select_query)
 	select_object = cursor.fetchall()
 
-	cursor.execute(select_query_2)
+	'''cursor.execute(select_query_2)
 	select_tweet_id = cursor.fetchall()
 	list_of_ids = []
 	for tweet in select_tweet_id:
@@ -36,15 +36,15 @@ def populate_update_data():
 
 
 
-	'''print("HEllo")
+	
 
-	article_dict = []
+	'''article_dict = []
 	for obj in select_object:
-		article_dict.append({'article_id': obj[0], 'content': obj[1]})
+		article_dict.append({'article_id': obj[0], 'title': obj[1]})
 
 	df = pd.DataFrame(article_dict)
 	df.index.name = 'row_id'
-	df = credibility(df,'content')
+	df = credibility(df,'title')
 	print(df)
 	for ind in df.index:
 		#print(df.loc[ind, 'topics_id'])
