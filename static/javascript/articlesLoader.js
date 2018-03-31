@@ -75,14 +75,8 @@ xmlhttp.onreadystatechange = function () {
         document.getElementById("title_15").innerHTML = obj[15].title;
         document.getElementById("cred_15").innerHTML = obj[15].credibility_score;
         document.getElementById("content_15").innerHTML = obj[15].content;
-    }
-};
-
-xmlhttp.open("GET", "/api/articles/", true);
-xmlhttp.send();
-
-
-            if(document.getElementById("cred_0").innerHTML < 0.33) {
+    
+        if(document.getElementById("cred_0").innerHTML < 0.33) {
             document.getElementById("news_box_0").style.background = "rgba(244, 66, 69, 0.3)";
             document.getElementById("news_box_0").style.borderLeft = "5px solid red";
             }
@@ -250,6 +244,7 @@ xmlhttp.send();
             document.getElementById("news_box_13").style.background = "rgba(9, 89, 5, 0.5)";
             document.getElementById("news_box_13").style.borderLeft = "5px solid green";
         }
+        
         if(document.getElementById("cred_14").innerHTML < 0.33) {
             document.getElementById("news_box_14").style.background = "rgba(244, 66, 69, 0.3)";
             document.getElementById("news_box_14").style.borderLeft = "5px solid red";
@@ -262,6 +257,7 @@ xmlhttp.send();
             document.getElementById("news_box_14").style.background = "rgba(9, 89, 5, 0.5)";
             document.getElementById("news_box_14").style.borderLeft = "5px solid green";
         }
+        
         if(document.getElementById("cred_15").innerHTML < 0.33) {
             document.getElementById("news_box_15").style.background = "rgba(244, 66, 69, 0.3)";
             document.getElementById("news_box_15").style.borderLeft = "5px solid red";
@@ -274,3 +270,8 @@ xmlhttp.send();
             document.getElementById("news_box_15").style.background = "rgba(9, 89, 5, 0.5)";
             document.getElementById("news_box_15").style.borderLeft = "5px solid green";
         }
+    }
+};
+
+xmlhttp.open("GET", "/api/articles/", true);
+xmlhttp.send();
