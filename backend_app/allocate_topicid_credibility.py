@@ -64,6 +64,3 @@ def populate_update_data():
 
 	#df = pd.DataFrame(article_dict)
 	#df.index.name = 'row_id'
-
-if __name__ == '__main__':
-	populate_data()
