@@ -1,3 +1,9 @@
+.wrapper_box {
+    border: 1px solid #777777;
+    border-radius: 20px;
+    background: #dddddd;
+}
+
 #title {
     background: #dddddd;
     margin: 3px;
