@@ -87,16 +87,17 @@ def stemm(dataSet, str):
     dataSet[str]=title 
     return dataSet
 
-#main
-df = pd.read_csv("text_tag.csv")
-df.columns = ["content" , "label"]
-out = credibility(df,"content")
-given = df.label
-pred = out.label
+if __name__ == '__main__':
+    #main
+    df = pd.read_csv("text_tag.csv")
+    df.columns = ["content" , "label"]
+    out = credibility(df,"content")
+    given = df.label
+    pred = out.label
 
-count = 0
-for i in range(given.size):
-    if given[i] == pred[i]:
-        count = count + 1
-print(count/given.size)
-print(given.size)
+    count = 0
+    for i in range(given.size):
+        if given[i] == pred[i]:
+            count = count + 1
+    print(count/given.size)
+    print(given.size)
