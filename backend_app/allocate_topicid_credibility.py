@@ -1,7 +1,7 @@
 import MySQLdb
 import pandas as pd
 #from similar_article import getArticleTopicIds
-from backend_app.predict import credibility
+from backend_app.predict_on_stemmed_data import credibility
 #from backend_app.update_script import update
 
 def populate_update_data():
