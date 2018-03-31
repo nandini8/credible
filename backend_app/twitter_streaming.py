@@ -9,6 +9,7 @@ from backend_app.process_tweets import DownloadJob
 from datetime import datetime, timedelta
 from backend_app.trending_tags import extractTrendingTags
 from backend_app.populate_initialdata import populate_data
+from backend_app.allocate_topicid_credibility import populate_update_data
 
 
 #import pandas as pd
@@ -57,7 +58,7 @@ class StdOutListener(StreamListener):
 def run_streaming():
     #This handles Twitter authetification and the connection to Twitter Streaming API
 
-    l = StdOutListener(time_limit=1800)
+    l = StdOutListener(time_limit=10)
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l, tweet_mode='extended')
@@ -70,6 +71,11 @@ def run_streaming():
     print("Streaming complete. Creating initial database")
 
     value = populate_data()
-    print("END", value)
+    print("populated data", value)
+
+    populate_update_data()
+    print("END")
+
+
 
 
