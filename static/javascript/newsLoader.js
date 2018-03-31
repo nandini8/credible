@@ -12,7 +12,6 @@ xmlhttp.onreadystatechange = function() {
 
     xmlhttp.open("GET", "http://18.216.28.234:8000/api/articles/" + localStorage.getItem('article_id'), true);
     xmlhttp.send();
-}
 
 /*
 var xmlhttp = new XMLHttpRequest();
