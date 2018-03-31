@@ -5,8 +5,11 @@ xmlhttp.onreadystatechange = function() {
         var Obj = JSON.parse(this.responseText);
         
         document.getElementById("title").innerHTML = Obj[0].title;
+        document.getElementById("article_link").innerHTML = Obj[0].article_link;
+        document.getElementById("data").innerHTML = Obj[0].data;
+        document.getElementById("publisher").innerHTML = Obj[0].publisher;
+        document.getElementById("credibility_score").innerHTML = Obj[0].credibility_score;
         document.getElementById("content").innerHTML = Obj[0].content;
-        document.getElementById("credibility").innerHTML = Obj[0].credibility_score;
         }
     };
 
