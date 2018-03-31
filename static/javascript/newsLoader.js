@@ -6,9 +6,9 @@ xmlhttp.onreadystatechange = function() {
         
         document.getElementById("title").innerHTML = Obj[0].title;
         document.getElementById("article_link").innerHTML = Obj[0].article_link;
-        document.getElementById("date").innerHTML = Obj[0].published_date;
-        document.getElementById("publisher").innerHTML = Obj[0].publisher;
-        document.getElementById("credibility_score").innerHTML = Obj[0].credibility_score;
+        document.getElementById("date").innerHTML              = "Publication Detail : " + Obj[0].published_date;
+        document.getElementById("publisher").innerHTML         = "Publisher          : " + Obj[0].publisher;
+        document.getElementById("credibility_score").innerHTML = "Credibility        : " + (Obj[0].credibility_score * 100);
         document.getElementById("content").innerHTML = Obj[0].content;
         }
     };
