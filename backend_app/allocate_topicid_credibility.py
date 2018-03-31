@@ -1,7 +1,7 @@
 import MySQLdb
 import pandas as pd
 #from similar_article import getArticleTopicIds
-from backend_app.predict import credibility
+from backend_app.predict_on_stemmed_data import credibility
 #from backend_app.update_script import update
 
 def populate_update_data():
@@ -36,6 +36,7 @@ def populate_update_data():
 
 
 
+	print("HEllo")
 
 	article_dict = []
 	for obj in select_object:
@@ -64,6 +65,3 @@ def populate_update_data():
 
 	#df = pd.DataFrame(article_dict)
 	#df.index.name = 'row_id'
-
-if __name__ == '__main__':
-	populate_data()

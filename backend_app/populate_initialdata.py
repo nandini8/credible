@@ -3,6 +3,7 @@ import MySQLdb
 import string
 from dateutil.parser import parse
 import datetime
+from backend_app.allocate_topicid_credibility import populate_update_data
 '''import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "credible_project.settings")
 import django
@@ -62,7 +63,11 @@ def populate_data():
 			count+=1
 		mydb.commit()
 		cursor.close()
-	return True
+
+	populate_update_data()
+	
+
+
 
 
 '''def populate_model():
