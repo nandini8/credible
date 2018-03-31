@@ -78,5 +78,5 @@ xmlhttp.onreadystatechange = function () {
     }
 };
 
-xmlhttp.open("GET", "http://18.216.28.234:8000/api/articles/", true);
+xmlhttp.open("GET", "/api/articles/", true);
 xmlhttp.send();
