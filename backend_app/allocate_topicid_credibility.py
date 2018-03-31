@@ -1,8 +1,8 @@
 import MySQLdb
 import pandas as pd
 #from similar_article import getArticleTopicIds
-from predict import credibility
-from update_script import update
+from backend_app.predict import credibility
+from backend_app.update_script import update
 
 def populate_update_data():
 	mydb = MySQLdb.connect(host='localhost',
