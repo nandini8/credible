@@ -24,7 +24,7 @@ def article(request):
 		db='CredibleDB')
 	cursor = mydb.cursor()
 	mydb.set_character_set('utf8mb4')
-	query = 'SELECT article_id, title, content, credibility_score, publisher, published_date, article_link, likes FROM TWEET_DATA order by likes LIMIT 30;'
+	query = 'SELECT article_id, title, content, credibility_score, publisher, published_date, article_link, likes FROM TWEET_DATA order by likes;'
 	cursor.execute(query)
 	article_details = cursor.fetchall()
 	articles = []
@@ -52,7 +52,7 @@ def articles_detail(request, article_number):
 		db='CredibleDB')
 	cursor = mydb.cursor()
 	mydb.set_character_set('utf8mb4')
-	query = 'SELECT article_id, title, content, publisher, published_date, credibility_score, article_link, likes FROM TWEET_DATA WHERE article_id = ' + article_number + 'order by likes LIMIT 30;'
+	query = 'SELECT article_id, title, content, publisher, published_date, credibility_score, article_link, likes FROM TWEET_DATA WHERE article_id = ' + article_number + 'order by likes;'
 	print(query)
 	print("Article number", article_number)
 	cursor.execute(query)
