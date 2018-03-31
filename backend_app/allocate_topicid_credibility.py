@@ -36,6 +36,7 @@ def populate_update_data():
 
 
 
+	print("HEllo")
 
 	article_dict = []
 	for obj in select_object:
