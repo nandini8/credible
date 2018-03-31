@@ -3,7 +3,7 @@ import MySQLdb
 import string
 from dateutil.parser import parse
 import datetime
-from allocate_topicid_credibility import populate_update_data
+from backend_app.allocate_topicid_credibility import populate_update_data
 '''import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "credible_project.settings")
 import django
