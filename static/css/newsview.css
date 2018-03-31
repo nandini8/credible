@@ -1,29 +1,52 @@
 #title {
-    background: #666666;
-    margin: 5px;
-    padding: 5px;
+    background: #dddddd;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #f15b00;
+    
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+#article_link {
+    background: #dddddd;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #653465;
 }
 
 #date {
-    background: #666666;
-    margin: 5px;
-    padding: 5px; 
+    background: #dddddd;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #publisher {
-    background: #666666;
-    margin: 5px;
-    padding: 5px;
+    background: #dddddd;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+
 }
 
 #credibility_score {
-    background: #666666;
-    margin: 5px;
-    padding: 5px;
+    background: #dddddd;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #content {
-    background: #666666;
-    margin: 5px;
-    padding: 5px;
+    background: #dddddd;
+    margin: 3px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: center;
 }
