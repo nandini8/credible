@@ -77,7 +77,7 @@ class DownloadJob(workerpool.Job):
 	def parse_tweet(self, tweet): #tweet parameter is a JSON 
 	
 		try:
-			with open(tweets_csv_data_path, 'a') as file:
+			with open(tweets_csv_data_path, 'w') as file:
 				writer = csv.writer(file)
 				finalList = []
 				
