@@ -36,7 +36,7 @@ def populate_update_data():
 
 
 
-	'''print("HEllo")
+	
 
 	article_dict = []
 	for obj in select_object:
@@ -51,7 +51,7 @@ def populate_update_data():
 		set_query = "update TWEET_DATA set credibility_score = " + str(df.loc[ind, 'credibility_score']) + " where article_id = " + str(df.loc[ind, 'article_id']) + ";"
 		print(set_query)
 		cursor.execute(set_query)
-	mydb.commit()'''
+	mydb.commit()
 	
 	'''df = getArticleTopicIds(df)
 	for ind in df.index:
